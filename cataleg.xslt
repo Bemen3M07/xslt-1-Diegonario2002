@@ -17,16 +17,13 @@
       <td><xsl:value-of select="title"/></td>
       <td><xsl:value-of select="artist"/></td>
 <td><xsl:value-of select="country"/></td>
-<td>
-                <!-- Comprova si el preu és superior a 10 euros -->
+<td>           
                 <xsl:choose>
-                  <xsl:when test="price &gt; 10">
-                    <!-- Punt vermell -->
-                    <span style="color:red;">●</span>
+                  <xsl:if test="price &lt;= 10">
+                    <span style="color:red;">&#128994;</span>
                   </xsl:when>
                   <xsl:otherwise>
-                    <!-- Punt verd -->
-                    <span style="color:green;">●</span>
+                    <span style="color:green;">&#128308;</span>
                   </xsl:otherwise>
                 </xsl:choose>
               </td>
