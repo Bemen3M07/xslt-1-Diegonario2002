@@ -14,6 +14,7 @@
     <tr>
       <td><xsl:value-of select="title"/></td>
       <td><xsl:value-of select="artist"/></td>
+      <td><xsl:value-of select="country"/></td>
     </tr>
     </xsl:for-each>
   </table>
