@@ -8,6 +8,7 @@
     <tr bgcolor="#ff0000">
       <th style="text-align:left">Title</th>
       <th style="text-align:left">Artist</th>
+      <th style="text-align:left">Country</th>
     </tr>
     <xsl:for-each select="catalog/cd">
     <tr>
